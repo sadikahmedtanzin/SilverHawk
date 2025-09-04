@@ -1,0 +1,828 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* start top header  */
+header .top-header {
+    background-color: #173a69;
+    padding: 8px 0;
+}
+
+header .top-header .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+header .top-header .container .left-side ul {
+    list-style-type: none;
+}
+
+header .top-header .container .left-side ul li {
+    display: inline-block;
+    margin-right: 45px;
+}
+
+header .top-header .container .left-side ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+}
+
+header .top-header .container .left-side ul li a i {
+    margin-right: 8px;
+}
+
+header .top-header .container .right-side {
+    text-align: right;
+}
+
+header .top-header .container .right-side i {
+    color: white;
+}
+
+header .top-header .container .right-side i:nth-child(2) {
+    margin: 0 30px;
+}
+
+/* end top header  */
+/* start header menu  */
+header .header-menu {
+    padding: 14px 0;
+}
+
+header .header-menu .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .header-menu .container .logo-col {
+    width: 20%;
+}
+
+header .header-menu .container .menu-col {
+    width: 80%;
+    text-align: right;
+    align-content: center;
+}
+
+header .header-menu .container .menu-col ul {
+    list-style-type: none;
+}
+
+header .header-menu .container .menu-col ul li {
+    display: inline-block;
+    padding: 0 39px;
+    position: relative;
+}
+
+header .header-menu .container .menu-col ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+header .header-menu .container .menu-col ul li:last-child {
+    padding-right: 0;
+}
+
+header .header-menu .container .menu-col ul li::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 4px;
+    background-color: #0c1f38;
+    bottom: -40px;
+    left: 0;
+    transition: 0.4s;
+}
+
+header .header-menu .container .menu-col ul li:hover::before {
+    width: 100%;
+
+}
+
+/* end header menu  */
+
+/* Start Slider Section  */
+
+.Slider-Section .Slider-1 {
+    width: 100%;
+    max-width: 100%;
+    height: 528px;
+    background-repeat: no-repeat;
+    background-image: url(images/Slider-1-BG.jpg);
+    background-size: cover;
+    align-content: center;
+
+}
+
+.Slider-Section .Slider-1 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Slider-Section .Slider-1 .container .right-side h3 {
+    font-size: 17px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.Slider-Section .Slider-1 .container .right-side h1 {
+    font-size: 60px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.Slider-Section .Slider-1 .container .right-side p {
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 31px;
+}
+
+.Slider-Section .Slider-1 .container .right-side .btton-gp a {
+    text-decoration: none;
+    background-color: #173a69;
+    padding: 14px 24px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    border: 3px solid #173a69;
+    border-radius: 2px;
+    transition: .4s;
+}
+
+.Slider-Section .Slider-1 .container .right-side .btton-gp a:hover {
+    background-color: transparent;
+    color: #173a69;
+}
+
+.Slider-Section .Slider-1 .container .right-side .btton-gp a:last-child {
+    background-color: transparent;
+    color: #173a69;
+}
+
+.Slider-Section .Slider-1 .container .right-side .btton-gp a:last-child:hover {
+    background-color: #173a69;
+    color: white;
+}
+
+/* End Slider Section  */
+/* Start Services Section */
+.Services-section {
+    padding: 140px;
+}
+
+*.Section-heading h2 {
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.Services-section .Section-heading {
+    text-align: center;
+}
+
+.Services-section .Section-heading h2 {
+    display: inline-block;
+    position: relative;
+}
+
+.Services-section .Section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(images/icon-line.png);
+    background-repeat: no-repeat;
+    left: 110px;
+    top: 65px;
+}
+
+.Services-section .Services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-top: 110px;
+}
+
+.Services-section .Services .col {
+    text-align: center;
+}
+
+.Services-section .Services .col p {
+    font-size: 17px;
+    margin-top: 25px;
+}
+
+/* End Services Section */
+/* Start Aboout-Us section  */
+
+.About-us {
+    background-image: url(images/About-us-bg.jpg);
+    width: 100%;
+    height: 540px;
+}
+
+.About-us .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.About-us .container .left-side {
+    padding: 90px;
+}
+
+.About-us .container .right-side h3 {
+    padding-top: 140px;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.About-us .container .right-side img {
+    margin-top: 30px;
+    margin-bottom: 22px;
+}
+
+.About-us .container .right-side p {
+    font-size: 15px;
+}
+
+/* End  Aboout-Us section  */
+/* Start Gallery Section */
+
+.Gallery-Section .container {
+    padding: 100px 0;
+}
+
+.Gallery-Section .container .Section-heading {
+    text-align: center;
+}
+
+.Gallery-Section .container .Section-heading h2 {
+  display: inline-block;
+    position: relative;
+
+}
+
+.Gallery-Section .container .Section-heading h2::after {
+    content: '';
+    position: absolute;
+    width: 245px;
+    height: 30px;
+    background-image: url(images/icon-line.png);
+    background-repeat: no-repeat;
+    left: -45px;
+    top: 65px;
+}
+
+.Gallery-Section .container .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 150px;
+    gap: 32px;
+}
+
+.Gallery-Section .container .gallery .gallery-item {
+    text-align: center;
+    position: relative;
+}
+
+
+.Gallery-Section .container .gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.Gallery-Section .container .gallery .gallery-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6;
+    left: 0;
+    top: 0;
+    transition: .4s;
+    opacity: 0;
+}
+
+.Gallery-Section .container .gallery .gallery-item:hover::after {
+    opacity: 1;
+}
+
+.Gallery-Section .container .gallery .gallery-item .caption {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Gallery-Section .container .gallery .gallery-item:hover .caption {
+    opacity: 1;
+}
+
+.Gallery-Section .container .gallery .gallery-item .caption i {
+    font-size: 20px;
+    border: 2px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.Gallery-Section .container .gallery .gallery-item .caption h2 {
+    font-weight: 700;
+}
+
+.Gallery-Section .container .botton a {
+    text-decoration: none;
+    background-color: #173a69;
+    padding: 14px 24px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700px;
+    text-transform: uppercase;
+    border: 3px solid #173a69;
+    border-radius: 2px;
+    transition: .4s;
+
+}
+
+.Gallery-Section .container .botton {
+    text-align: center;
+    padding-top: 70px;
+}
+
+/* End Gallery Section */
+
+/* Start footer */
+footer .Contact {
+    background-color: #173a69;
+    padding: 90px 0;
+}
+
+footer .Contact .container {
+    text-align: center;
+}
+
+footer .Contact .container p {
+    font-size: 24px;
+    color: white;
+}
+
+footer .Contact .container p a {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+footer .Social-media .container {
+    padding: 75px 0;
+    text-align: center;
+}
+
+footer .Social-media .container .icon-gp i {
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    border: 2px solid gray;
+    color: gray;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+footer .Social-media .container .icon-gp i:nth-child(2) {
+    margin: 0 40px;
+}
+
+footer .Social-media .container .icon-gp i:hover {
+    background-color: #173a69;
+    color: white;
+    border-color: white;
+}
+
+footer .Socket {
+    background-color: #000;
+}
+
+footer .Socket .container {
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .Socket .container p {
+    font-size: 15px;
+    color: white;
+}
+
+footer .Socket .container p a {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+/* End footer */
+
+
+
+/* #####  START SERVICES CSS  ##### */
+
+/* Start Inner Background */
+.Inner-banner {
+    min-height: 300px;
+    background-image: url(images/Inner-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+
+.Inner-banner .container {
+    text-align: center;
+}
+
+.Inner-banner .container h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Inner-banner .container p {
+    font-size: 14px;
+    color: white;
+}
+
+.Inner-banner .container p a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+/* End Inner Background */
+/* Start info section */
+.info {
+    min-height: 550px;
+    background-image: url(images/info-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.info .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 90px 0;
+    gap: 40px;
+}
+
+.info .container .info-item {
+    text-align: left;
+}
+
+.info .container .info-item img {
+    width: 100%;
+}
+
+.info .container .info-item h3 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #173a69;
+    margin: 20px 0;
+}
+
+.info .container .info-item p {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* End info section */
+
+/* #####  END SERVICES CSS  ##### */
+
+/* #####   START ABOUT US CSS ##### */
+.Welcome-to-Silver-Hawk .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 70px 0;
+}
+
+.Welcome-to-Silver-Hawk .container .right-side h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+
+.Welcome-to-Silver-Hawk .container .right-side h3 a {
+    font-size: 28px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #173a69;
+    text-transform: uppercase;
+}
+
+.Welcome-to-Silver-Hawk .container .right-side img {
+    margin: 20px 0;
+}
+
+/* Start Aboout-us info section 1 */
+.info-1st {
+    min-height: 600px;
+    background-image: url(images/about-us-info-1-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-1st .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 120px 0;
+    gap: 30px;
+}
+
+.info-1st .container .item {
+    height: 360px;
+    width: 360px;
+    background-color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info-1st .container .item img {
+    margin-bottom: 15px;
+}
+
+.info-1st .container .item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #173a69;
+    position: relative;
+}
+
+.info-1st .container .item h3::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    background-image: url(images/info-1st-icon-line.png);
+    background-repeat: no-repeat;
+    left: 108px;
+    top: 30px;
+}
+
+.info-1st .container .item p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.info-1st .container .item p a {
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #173a69;
+}
+
+/* End Aboout-us info section 1 */
+
+.line .container p {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.line .container p a {
+    text-decoration: none;
+    color: #173a69;
+}
+
+/* Start Aboout-us info section 2 */
+.info-2nd {
+    min-height: 600px;
+    background-image: url(images/about-us-info-2-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-2nd .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 120px 0;
+    gap: 30px;
+}
+
+.info-2nd .container .item {
+    height: 360px;
+    width: 360px;
+    background-color: transparent;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.info-2nd .container .item img {
+    margin-bottom: 20px;
+}
+
+.info-2nd .container .item h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #173a69;
+    margin: 10px 0;
+}
+
+.info-2nd .container .item p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+/* End Aboout-us info section 2 */
+
+/* ##### START GALLERY CSS ##### */
+/* Start Gallery Section */
+
+.Gallery-Section .container {
+    padding-bottom: 100px;
+}
+
+.Gallery-Section .container .M-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item {
+    text-align: center;
+    position: relative;
+}
+
+
+.Gallery-Section .container .M-gallery .gallery-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a6;
+    left: 0;
+    top: 0;
+    transition: .4s;
+    opacity: 0;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item:hover::after {
+    opacity: 1;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item .caption {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item:hover .caption {
+    opacity: 1;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item .caption i {
+    font-size: 20px;
+    border: 2px solid white;
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.Gallery-Section .container .M-gallery .gallery-item .caption h2 {
+    font-weight: 700;
+}
+
+/* ##### END GALLERY CSS ##### */
+/* ##### START CONTACT CSS ##### */
+.contact-form .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 90px 0;
+}
+
+.contact-form .container .left-side h3 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.contact-form .container .left-side p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0;
+}
+
+.contact-form .container .left-side form {
+    width: 100%;
+}
+
+.contact-form .container .left-side form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.contact-form .container .left-side form .form-group-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.contact-form .container .left-side form .form-group-2 {
+    margin: 20px 0;
+}
+
+.contact-form .container .left-side form .form-group-2 textarea {
+    height: 150px;
+}
+
+.contact-form .container .left-side form button {
+    padding: 10px;
+    background-color: #173a69;
+    color: white;
+    transition: .4s;
+}
+
+.contact-form .container .left-side form button:hover {
+    background-color: white;
+    color: #173a69;
+}
+
+.contact-form .container .right-side {
+    margin-left: 60px;
+}
+
+.contact-form .container .right-side h2 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.contact-form .container .right-side ul {
+    list-style-type: none;
+}
+
+.contact-form .container .right-side ul li {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0;
+    color: #173a69;
+}
+
+.contact-form .container .right-side ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.contact-form .container .right-side ul li i {
+    margin: 0 10px;
+}
